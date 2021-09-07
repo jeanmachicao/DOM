@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.main-contentainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: #266064;
+}
+.controles-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height:70vh;
+     overflow: hidden;
+}
+.botones-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.boton{
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Permanent Marker';
+    margin-top: 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.volume{
+    background-color: white;
+    color: black;
+    margin-top: 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.data-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo{
+    color: white;
+    font-size: 2em;
+    font-family: 'Permanent Marker';
+}
+.cancion{
+    color: black;
+    font-size: 1em;
+    font-family: 'Permanent Marker';
+}
+.cancion-contenedor{
+    width: 20em;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-cp{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    animation-name: girar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+#barra{
+    width: 100%;
+}
+
+ @keyframes girar {
+     from{transform: rotate(0deg);}
+     to{transform: rotate(360deg);}
+ }
